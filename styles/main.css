@@ -13,12 +13,12 @@
     scroll-behavior: smooth;
 }
 
-.html,
-body {
-    font-family: Aeonik, sans-serif;
-}
-
 @font-face {
     font-family: Aeonik;
     src: url("../fonts/Aeonik-Font/Aeonik-Regular.otf");
-  }
+}
+
+html,
+body {
+    font-family: Aeonik, sans-serif;
+}
