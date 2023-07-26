@@ -5,3 +5,20 @@
     --grandis: #FFDA6C;
     --nero: #1A1717;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.html,
+body {
+    font-family: Aeonik, sans-serif;
+}
+
+@font-face {
+    font-family: Aeonik;
+    src: url("../fonts/Aeonik-Font/Aeonik-Regular.otf");
+  }
