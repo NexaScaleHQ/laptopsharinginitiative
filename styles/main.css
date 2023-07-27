@@ -85,7 +85,7 @@ nav {
   background-image: url("../assets/logos/primary.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: top right;
 }
 
 .logo-link-wrapper a {
@@ -293,7 +293,7 @@ header {
 }
 
 .cta_join h2 {
-    max-width: 500px;
+  max-width: 500px;
   line-height: 1.5;
   font-weight: 400;
   font-size: 36px;
@@ -559,8 +559,8 @@ footer {
 
 @media only screen and (min-width: 768px) {
   .logo-link-wrapper {
-    width: 200px;
-    height: 50px;
+    width: 123px;
+    height: 30px;
   }
 
   .header-text {
@@ -577,7 +577,7 @@ footer {
 
   .fundraising-section figure {
     width: 55%;
-    height: 600px;
+    height: auto;
   }
 }
 
@@ -742,5 +742,9 @@ footer {
 
   .youtube-video {
     margin: 70px auto;
+  }
+
+  .fundraising-section figure {
+    height: 610px;
   }
 }
