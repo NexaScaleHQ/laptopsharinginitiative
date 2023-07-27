@@ -27,6 +27,10 @@
   background-color: var(--tangerine);
 }
 
+p {
+  text-align: justify;
+}
+
 @font-face {
   font-family: Aeonik;
   src: url("../assets/fonts/Aeonik-Font/Aeonik-Regular.otf");
