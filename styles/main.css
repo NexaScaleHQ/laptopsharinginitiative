@@ -169,7 +169,7 @@ header {
 
 .donate-now {
   max-width: 175px;
-  padding: 16px 32px;
+  height: 54px;
   background-color: var(--tangerine);
   border-radius: 12px;
   transition: 0.2s linear;
@@ -185,6 +185,11 @@ header {
 .donate-now a {
   font-size: 16px;
   text-transform: capitalize;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .donate-now:hover a {
@@ -290,8 +295,7 @@ header {
 
 .empower-techie {
   margin: 30px 0 0;
-  max-width: fit-content;
-  max-width: -moz-fit-content;
+  max-width: 200px;
 }
 
 .proofs {
@@ -361,7 +365,8 @@ header {
 
 .cta button {
   background-color: var(--tangerine2);
-  padding: 16px 32px;
+  max-width: 175px;
+  width: 100%;
   border-radius: 12px;
   color: var(--nero);
   font-size: 20px;
@@ -417,14 +422,24 @@ header {
 }
 
 .partner-with-us {
-  max-width: 175px;
-  padding: 16px 32px;
+  max-width: 200px;
+  width: 100%;
+  height: 54px;
   background-color: var(--tangerine);
   border-radius: 12px;
   transition: 0.2s linear;
   border: 2px solid var(--tangerine);
   text-align: center;
   margin: auto;
+  overflow: hidden;
+}
+
+.partner-with-us a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .partner-with-us:hover {
@@ -511,6 +526,10 @@ footer {
     max-width: 200px;
     width: 100%;
     text-align: center;
+  }
+
+  .donate:hover a {
+    color: var(--tangerine);
   }
 
   .close-icon {
