@@ -4,6 +4,8 @@
   --tangerine2: #ff9814;
   --grandis: #ffda6c;
   --nero: #1a1717;
+  --salomie: #ffdc73;
+  --supernova: #ffd98e;
 }
 
 * {
@@ -184,11 +186,54 @@ header {
 }
 
 /* end of header */
+
+/* programs */
+.laptop-programs-wrapper {
+  width: 100%;
+  background-color: var(--salomie);
+  padding: 80px 0;
+}
+
+.programs {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+  gap: 40px;
+}
+
+.cards {
+  background-color: #ffba307f;
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  box-shadow: 10px 10px 5px 0 #ffba30b2;
+}
+
+.cards p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.line {
+  max-width: 50px;
+  border: 3px solid #c90094;
+  margin: 10px 0 15px;
+}
+
+.line-2 {
+  border: 3px solid #f60;
+}
+
+.line-3 {
+  border: 3px solid #00c0c0;
+}
+
 .fundraising-section {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 70px 0 0;
 }
 
 .fundraising-section article {
@@ -438,6 +483,10 @@ footer {
   .logo-link {
     opacity: 0;
   }
+
+  .programs {
+    max-width: 450px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -632,5 +681,10 @@ footer {
 
   .fundraising-section figure {
     height: 610px;
+  }
+
+  .programs {
+    flex-direction: row;
+    width: 90%;
   }
 }
