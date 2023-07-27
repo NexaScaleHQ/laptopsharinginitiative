@@ -392,11 +392,11 @@ header {
   align-items: center;
   justify-content: start;
   padding: 40px;
-  background: var(--grandis);
+  background: #ffba307f;
   border-radius: 12px;
   /* height: fit-content; */
-  box-shadow: 10px 10px 5px 0 var(--tangerine);
-  -webkit-box-shadow: 10px 10px 5px 0 var(--tangerine);
+  box-shadow: 10px 10px 5px 0 #ffba30b2;
+  -webkit-box-shadow: 10px 10px 5px 0 #ffba30b2;
   border: 0;
 }
 
@@ -589,7 +589,7 @@ footer {
 
   .cta img {
     width: 100vw;
-    height: 500px;
+    height: 300px;
     max-height: none;
     object-fit: cover;
   }
