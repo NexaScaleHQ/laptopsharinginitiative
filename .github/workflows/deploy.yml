@@ -1,0 +1,29 @@
+name: Deploy website
+
+on:
+  push:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix: 
+        node-version: [16.17.1]
+    steps:
+      - uses: actions/checkout@v2.1.0
+        with:
+          fetch-depth: 2
+      - run: git reset --hard
+      
+      - name: Deploy website
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+            username: "u92919786-main"
+            server: "home729027644.1and1-data.host"
+            port: "22"
+            local_path: './*'
+            remote_path: './laptopsharing'
+            sftp_only: true
+            password: ${{ secrets.SSHPASSWORD }}
+          
