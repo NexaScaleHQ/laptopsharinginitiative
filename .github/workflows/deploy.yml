@@ -22,7 +22,7 @@ jobs:
             username: "u92919786-main"
             server: "home729027644.1and1-data.host"
             port: "22"
-            local_path: './'
+            local_path: './*'
             remote_path: './laptopsharing'
             sftp_only: true
             password: ${{ secrets.SSHPASSWORD }}
