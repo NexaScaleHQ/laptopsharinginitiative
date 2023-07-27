@@ -205,46 +205,45 @@ header {
 
 /* end of header */
 
-/* programs */
-.laptop-programs-wrapper {
-  width: 100%;
-  background-color: #fff1c9;
-  padding: 80px 0;
-}
-
-.programs {
+/* more info */
+.more-info {
   width: 90%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+  margin: 160px auto;
 }
 
-.cards {
-  background-color: #ffba307f;
-  padding: 30px;
-  border-radius: 20px;
-  width: 100%;
-  box-shadow: 10px 10px 5px 0 #ffba30b2;
+.info-cards {
+  padding: 32px;
+  background-color: var(--nero);
+  color: white;
+  border-radius: 16px;
 }
 
-.cards p {
+.info-cards a {
+  color: var(--grandis);
+}
+
+.grandis a {
+  color: white;
+}
+
+.grandis a:hover,
+.info-cards a:hover {
+  color: var(--tangerine2);
+  text-decoration: underline;
+}
+
+.grandis {
+  background-color: var(--grandis);
+  color: var(--nero);
+}
+
+.info-cards p {
   text-align: justify;
   line-height: 1.5;
-}
-
-.line {
-  max-width: 50px;
-  border: 3px solid #c90094;
-  margin: 10px 0 15px;
-}
-
-.line-2 {
-  border: 3px solid #f60;
-}
-
-.line-3 {
-  border: 3px solid #00c0c0;
 }
 
 .fundraising-section {
@@ -370,56 +369,6 @@ header {
   border: 2px solid var(--tangerine);
 }
 
-.mission_container {
-  padding: 100px 10vw;
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  background-color: #fff1c9;
-}
-
-@media screen and (min-width: 992px) and (max-width: 1450px) {
-  .mission_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.mission {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  padding: 30px;
-  background: #ffba307f;
-  border-radius: 12px;
-  /* height: fit-content; */
-  box-shadow: 10px 10px 5px 0 #ffba30b2;
-  -webkit-box-shadow: 10px 10px 5px 0 #ffba30b2;
-  border: 0;
-}
-
-.mission h1 {
-  font-size: 36px;
-  font-weight: 500;
-  color: var(--nero);
-  margin-bottom: 20px;
-}
-
-.mission p {
-  font-size: 16px;
-  line-height: 22px;
-  max-width: 500px;
-  font-weight: 300;
-}
-
-.mission p a {
-  color: var(--tangerine2);
-  border-bottom: 1px solid var(--tangerine2);
-  padding-bottom: 3px;
-  font-family: Aeonik-LightItalic, sans-serif;
-}
-
 .partners {
   display: flex;
   flex-direction: column;
@@ -427,38 +376,62 @@ header {
   justify-content: center;
   padding: 50px 0;
   margin-top: 50px;
+  width: 90%;
+  margin: auto;
 }
 
 .partners h2 {
   font-size: 48px;
   font-weight: 500;
   color: var(--nero);
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .partners_logos {
   display: flex;
   gap: 20px;
+  width: 90%;
+  justify-content: center;
+  margin: auto;
 }
 
-.partners_logos img {
-  width: 150px;
-  height: 110px;
+.partner-logo {
+  max-width: 150px;
+  width: 100%;
+  height: 95px;
+}
+
+.partner-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .partners p {
   font-size: 18px;
   line-height: 32px;
   text-align: center;
-  margin-top: 20px;
-  max-width: 300px;
+  margin: 20px auto;
+  max-width: 450px;
 }
 
-.partners p a {
-  color: var(--tangerine2);
-  border-bottom: 3px solid var(--tangerine2);
-  padding-bottom: 5px;
-  font-family: Aeonik-LightItalic, sans-serif;
+.partner-with-us {
+  max-width: 175px;
+  padding: 16px 32px;
+  background-color: var(--tangerine);
+  border-radius: 12px;
+  transition: 0.2s linear;
+  border: 2px solid var(--tangerine);
+  text-align: center;
+  margin: auto;
+}
+
+.partner-with-us:hover {
+  background-color: transparent;
+}
+
+.partner-with-us:hover a {
+  color: var(--tangerine);
 }
 
 footer {
@@ -506,10 +479,6 @@ footer {
     transform: translateX(1000px);
     transition: 0.5s ease-in;
     z-index: 2;
-  }
-
-  .mission_container {
-    flex-direction: column;
   }
 
   .show-nav {
@@ -578,6 +547,10 @@ footer {
 
   .programs {
     max-width: 450px;
+  }
+
+  .more-info {
+    width: 70%;
   }
 }
 
@@ -809,5 +782,10 @@ footer {
   .programs {
     flex-direction: row;
     width: 90%;
+  }
+
+  .more-info {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
